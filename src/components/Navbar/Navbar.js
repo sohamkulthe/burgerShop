@@ -1,33 +1,24 @@
-import { Button } from '@mui/material';
 import React from 'react';
-import {Link} from "react-router-dom";
-import styled from "styled-components";
+import {Link} from 'react-router-dom';
+import { AppBar, Box, Button, ToggleButton, ToggleButtonGroup, Toolbar, Typography } from '@mui/material'
 
-const StyledNav = styled.nav(()=>({
-  top:'7%',
-  left:'34%',
-  borderRadius: '50px',
-
-}));
-
-const StyledNavLinks = styled.ul(()=>({
-  display: 'flex',
-  gap: '82px',
-  position:'relative',
-  left: '4%'
-}))
 
 function Navbar() {
   return (
-    <StyledNav className='navbar'>
-        <StyledNavLinks className='navbar-links'>
-          
-        <li className='display-flex'><Link  to='/'>Home</Link></li>
-        <li className='display-flex'><Link  to='/burgers'><Button color='secondary'>burgers</Button></Link></li>
-        <li className='display-flex'><Link  to='/offers'>Offers</Link></li>
-        <li className='display-flex'><Link  to='/shop'>Shop</Link></li>
-        </StyledNavLinks>
-    </StyledNav>
+    <AppBar position='absolute' sx={{top:'9%', left:'34%', width:'60%'}} className='navbar'>
+        <Toolbar sx={{display:'flex', justifyContent:'space-between'}}>
+            <Box className='navbar-links'>
+            <Typography className='navbar-texts' color='black' style={{textDecoration: 'none'}} component={Link} to="/">Home</Typography>
+            <Typography className='navbar-texts' color='black' component={Link} to='/burgers'>Burgers</Typography>
+            <Typography className='navbar-texts' color='black' component={Link} to="/offers">Offers</Typography>
+            <Typography className='navbar-texts' color='black' component={Link} to="/shop">Shop</Typography>
+            </Box>
+            <Box className="">
+                <Button className='bg-light-grey br-left-50 register-btn'  component={Link} to="/register">Register</Button>
+                <Button className='bg-light-red br-right-50 login-btn' component={Link} to="/login">Login</Button>
+            </Box>
+        </Toolbar>
+    </AppBar>
   )
 }
 

@@ -1,4 +1,4 @@
-const burgersList ={
+export const burgersList ={
     "burgers": [
       {
         "id": 1,

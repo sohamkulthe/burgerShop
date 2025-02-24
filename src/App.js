@@ -1,21 +1,17 @@
 //import logo from './logo.svg';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { LandingPage, Navbar } from './components';
-import Shop from './components/Shop';
-import Offers from './components/Offers';
-import Burgers from './components/Burgers';
+import { LandingPage, Navbar, Shop, Offers, Burgers } from './components/index';
 import './assets/style.scss';
 import './assets/styles/font.css';
 import theme from './assets/styles/theme';
 import {ThemeProvider} from '@mui/material/styles';
-import Appbar from './components/Navbar/Appbar';
 
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <BrowserRouter>
-      <Appbar/>
+      <Navbar/>
       <Routes>
         <Route path='/' index element={<LandingPage/>}/>
         <Route path='/burgers' element={<Burgers/>}/>
