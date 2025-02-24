@@ -1,0 +1,96 @@
+/*variables*/
+$color: #333;
+$light-cream-color: #F3E0D2;
+$light-orange-color: #ECAE5C;
+$light-grey: #E4E4E4;
+$pestal-red:#E75E5C;
+
+/*---------------------------------------*/
+
+/*-----------Button-----------------*/
+.register-btn {
+    font-weight: 700 !important;
+    line-height: 38px !important;
+    padding-right: 32px !important;
+    padding-left: 25px !important;
+    margin-right: -20px !important;
+    color: #000000 !important;
+}
+
+.login-btn {
+    font-weight: 700 !important;
+    line-height: 42px !important;
+    border-radius: 50px 0 0 50px !important;
+    font-size: 18px !important;
+    padding-right: 35px !important;
+    padding-left: 35px !important;
+    color: #FFFFFF !important;
+}
+/*---------------------------------------*/
+
+
+/*---------------Navbar-----------------*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 51px;;
+    position: absolute;
+    height: 9.5%;
+}
+
+.navbar-texts {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    font-weight: 600 !important;
+    line-height: 40px !important;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 52px;
+}
+/*--------------------------------------*/
+
+.bg-light-cream {
+    background-color: $light-cream-color;
+}
+
+.bg-orange {
+    background-color: $light-orange-color;
+}
+
+.bg-light-red {
+    background-color: $pestal-red !important;
+}
+
+.bg-light-grey {
+    background-color: $light-grey !important;
+}
+
+//-------------------Display-----------------------//
+.display-flex {
+    display: flex;
+}
+
+/*---------------border-radius-----------------*/
+.border-radius-50{
+    border-radius: 50px !important;
+}
+
+.br-left-50{
+    border-top-left-radius: 50px !important;
+    border-bottom-left-radius: 50px !important;
+}
+
+.br-right-50{
+    border-top-right-radius: 50px !important;
+    border-bottom-right-radius: 50px !important;
+}
+
+/*------------------------------------------------*/
+
+/*---------font-weight------------------------------*/
+.font-weight-700{
+    font-weight: 700 !important;
+}
+/*------------------------------------------------*/
